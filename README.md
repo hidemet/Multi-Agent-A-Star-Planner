@@ -40,28 +40,34 @@ Di seguito si riporta la struttura dei file e delle cartelle. Le scelte progettu
 
 - `benchmarks`: Contiene i file necessari per generare, testare e risolvere i problemi di ricerca.
 - `pf4ea`: Contiene il codice sorgente del programma.
-[benchmarks]
-├── [generators] # File .csv con le specifiche dei problemi
-├── [output_csv] # File .csv di output usati nei test
-├── [problems] # Istanze di problemi serializzate in .pkl
-└── [report] # Report in Markdown generati automaticamente
-└── [media] # Immagini e video dei percorsi
+```
+ [benchmarks]
+    ├── [generators]        # file csv con le specifiche dei problemi 
+    ├── [output_csv]        # file csv di output usati nei test
+    ├── [problems]          # salva istanze problema
+    └── [report]            # file report
+        └── [media] 
 [pf4ea]
-├── main.py # Punto di ingresso dell'applicazione
-├── agents.py # Logica per la generazione dei percorsi degli agenti
-├── cli.py # Implementazione dell'interfaccia a riga di comando (CLI)
-├── constants.py # Costanti utilizzate nel progetto
-├── gridGraph.py # Classe per la rappresentazione e generazione della griglia
-├── heuristic.py # Implementazione delle diverse funzioni euristiche
-├── input_handler.py # Gestore dell'input per la modalità manuale
-├── plotGraph.py # Funzioni per la rappresentazione grafica della griglia
-├── problem.py # Definizione della classe del problema PF4EA
-├── repository.py # Gestione della lettura/scrittura su file
-├── result.py # Classi per la gestione strutturata dei risultati
-├── search.py # Core logico con l'implementazione degli algoritmi ReachGoal
-├── state.py # Definizione della classe Stato per l'algoritmo di ricerca
-├── utils.py # Funzioni ausiliarie
-└── visualize.py # Logica per la creazione di output visivi (immagini, video)
+    ├── __main__.py          # Punto di ingresso dell'applicazione
+    ├── agents.py            # Generazione di percorsi agenti  
+    ├── cli.py               # Interfaccia a riga di comando
+    ├── constants.py         # Costanti utilizzate nel progetto
+    ├── gridGraph.py         # Generazione griglia
+    ├── heuristic.py         # Euristiche del problema 
+    ├── input_handler.py     # Gestore input nella modalità manuale
+    ├── plotGraph.py         # Rappresenta graficamente la griglia
+    ├── problem.py           # Definisci il problema PF4EA
+    ├── repository.py        # Gestisce le operazioni su file
+    ├── result.py            # Gestisce i risultati della ricerca
+    ├── search.py            # Implementa algoritmi ReachGoal e variante
+    ├── state.py             # Generazioni istanze stato del problema   
+    ├── utils.py             # Funzioni ausiliarie
+    ├── visualize.py         # Visualizzazione grafica griglia
+
+README.md                    # Questo file
+requirements.txt             # Dipendenze Python
+test.ipynb                   # notebook Jupyter per i test sulle performance
+```
 README.md # Questo file
 requirements.txt # Dipendenze Python
 test.ipynb # Notebook Jupyter per i test sulle performance
