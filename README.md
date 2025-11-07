@@ -1,5 +1,3 @@
-# Multi-Agent-A-Star-Planner
-Multi-Agent Pathfinding (MAPF) solver using a time-aware A* algorithm to find optimal, collision-free paths on a grid.
 # Multi-Agent A* Path Planner
 
 Applicazione Python che implementa un solver per il problema del **Multi-Agent Pathfinding (MAPF)**. Il software calcola percorsi ottimali e privi di collisioni per un agente che deve navigare in una griglia 2D con ostacoli e altri agenti in movimento, utilizzando un algoritmo **A* spazio-temporale**.
